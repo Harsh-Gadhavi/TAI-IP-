@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient( 108deg,  rgba(155, 129, 15, 0.856) 17.7%, rgba(255, 255, 255, 0.699) 91.2% );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    /* position: fixed;
+    z-index: 1; */
+}
+#sec2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(pic/sec2bg.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#sec2::before{
+    content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+.navitems ul{
+    display: flex;
+    list-style: none;
+}
+.navitems ul li a{
+    display: block;
+    font-size: 20px;
+    padding: 8px 26px;
+    transition: 0.2s;
+    margin: 0px 0px;
+    text-decoration: none;
+    color: black;
+}
+.navitems ul li:hover a{
+   background-color: rgba(238, 233, 157, 0.486);
+   color: rgb(134, 76, 21);
+   cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+.content h1{
+    font-weight: lighter;
+    color: #ffffff;
+    text-shadow: 2px -3px 4px#6b520e;
+    margin: 20px 0px 10px;
+    font-size: 40px;
+}
+.qoute{
+    width: 50%;
+    font-size: 20px; 
+    text-align: center;
+    margin-left: 25px;
+    font-family: cursive;
+    color: rgb(247, 209, 139);
+}
+.button1{
+    position: absolute;
+    background-color: rgba(175, 152, 75, 0.281);
+    color: wheat;
+    text-decoration: none;
+    border: 1px solid rgba(172, 141, 55, 0);
+    border-radius: 20px 20px;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4px;
+    left: 170px;
+    margin-top: 10px;
+    transition: 1s;
+}
+.button1:hover{
+    background-color: rgb(214, 189, 105);
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+/* About section */
+#sec3{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient( 108deg,  rgba(155, 129, 15, 0.856) 17.7%, rgba(222, 235, 188, 0.68) 91.2% );
+    /* border: 2px solid black; */
+    box-shadow: 2px 4px 60px black;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 40px;
+    font-family: serif;
+    margin-top: 10px;
+}
+
+.box_container{
+    display: flex;
+    padding: 20px 0px;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.leftbox{
+    width: 40%;
+    height: 25rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url(pic/about.jpg);
+    background-size: cover;
+    margin-left: 40px;
+}
+.rightbox{
+    width: 60%;
+    height: 25rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+}
+/* Category Section */
+#sec4{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient( 108deg,  rgba(221, 185, 24, 0.719) 17.7%, rgba(228, 233, 154, 0.473) 91.2% );
+}
+.cat_heading{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   top: 20px;
+}
+.cat_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.box1{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url(pic/whitesauce.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box2{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url(pic/spaggeti.jpg);
+    background-size: cover;
+}
+.box3{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url(pic/chicken\ pasta.jpg);
+    background-size: cover;
+    background-position-y: -50px;
+}
+.trybuttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.trybuttons button{
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #ecd68d;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: .6s;
+}
+.trybuttons button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.trybuttons button:hover{
+    background-color: rgb(255, 250, 178);
+    color: rgb(255, 255, 255);
+}
+.try1{
+    transform: translateX(-45px);
+    
+}
+.try2{
+    transform: translateX(0px);
+}
+.try3{
+    transform: translateX(50px);
+}
+/* Contact section */
+#sec5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient( 174.2deg,  rgb(255, 241, 159) 7.1%, rgb(212, 255, 197) 67.4% );
+}
+.contactinfo,.contactform{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.contactinfo h2,.contactform h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contactform form{
+    text-align: center;
+}
+.contactform label, .contactform input, .contactform textarea, .contactform button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contactform button{
+    background-color: blue;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transition: .4s;
+    padding: 10px 0px;
+}
+.contactform button:hover{
+    background-color: rgb(75, 42, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    cursor: pointer;
+}
+.contactform label{
+    text-align: left;
+    color: rgb(7, 39, 11);
+}
+.contactform input,.contactform textarea{
+    padding: 8px;
+
+}
+.contactinfo p{
+    padding: 15px;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 0px 20px;
+    }
+    .content {
+        top: 25%;
+        left: 10%;
+    }
+    .qoute {
+        width: 100%;
+        margin-left: 0;
+    }
+    .button1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .box_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftbox {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .rightbox {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cat_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trybuttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trybuttons button {
+        margin: 5px 0;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
